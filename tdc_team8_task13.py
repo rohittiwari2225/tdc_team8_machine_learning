@@ -5,11 +5,11 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 import streamlit as st
 
-# Get data
+#here to get data 
 solar_data = pd.read_csv('Copy of sonar data.csv',header=None)
 solar_data.head()
 
-#prepare data
+# here to prepare data
 solar_data.groupby(60).mean()
 solar_data.describe()
 
